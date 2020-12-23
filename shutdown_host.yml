@@ -1,6 +1,3 @@
 ---
 - name: Unconditionally shut down the machine with all defaults
-  hosts: all
-  tasks:
-    - name: shutdown
-      community.general.shutdown:
+  community.general.shutdown:
